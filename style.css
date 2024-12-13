@@ -1,0 +1,244 @@
+/* basic css reset */
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+*{ margin: 0; }
+img{
+    display:block;
+    max-width: 100%;
+}
+
+/* basic css reset */
+
+/* Repeated items */
+:root{
+    --purple-color: #7a36bf;
+    --blue-color:#0070ff;
+    --base-color: lavender;
+    --black-color:black;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: var(--base-color);
+    color: var(--black-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+
+.start, .board, .game, .score, .reset {
+    text-align: center;
+    margin: 10px 0;
+    width: 90%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--purple-color);
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: var(--blue-color);
+}
+
+.start {
+    padding: 20px;
+    background:var(--black-color);
+    color: var(--base-color);;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.start input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+
+    font-size: 1rem;
+    border: 2px solid var(--blue-color);
+    border-radius: 5px;
+    outline: none;
+}
+
+
+.start button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: var(--base-color);;
+    background: var(--blue-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.start button:hover {
+    background: var(--purple-color);
+}
+
+.board-div{
+    display: none;
+}
+
+.board-container {
+    display:none;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.board-container div {
+    padding: 20px;
+    background: var(--purple-color);
+    color: var(--base-color);;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+/* Dice Section */
+.dice {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dice i {
+    font-size: 4.5rem;
+    color: black;
+
+}
+
+#sum {
+    font-size: 2rem;
+    color: var(--purple-color);
+    margin-top: 10px;
+}
+
+/* Buttons */
+.indiv-btn, .sum-btn, .end-btn{
+    display:none;
+}
+
+.button {
+
+    gap: 40px;
+    margin: 20px 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.button button {
+    padding: 15px 20px;
+    font-size: 1rem;
+    color: var(--base-color);
+    background: var(--blue-color);
+    border: none;
+    border-radius: 5px;
+
+}
+
+#roll-btn{
+    padding: 15px 20px;
+    font-size: 1.5rem;
+    color: var(--base-color);
+    background: var(--blue-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Score Section */
+.score {
+    display: block;
+    margin-top: 20px;
+    padding: 20px;
+
+    background: var(--black-color);
+    color: var(--base-color);
+    border-radius: 8px;
+    display: none;
+}
+
+.score h1 {
+    color: var(--blue-color);
+}
+
+/* Reset Button */
+.reset {
+    margin-top: 20px;
+    display:block;
+    display: none;
+}
+
+.reset button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: var(--base-color);
+    background: var(--blue-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reset button:hover {
+    background: var(--purple-color);
+}
+
+.player-name{
+    display: block;
+}
+
+.board-container div.shut{
+    background-color: var(--black-color);
+    color: var(--blue-color);
+    border-color: var(--black-color);
+    text-align: center;
+}
+
+button:disabled {
+    background-color: var(--blue-color);
+    color: white;
+    cursor: not-allowed;
+    opacity: 0.6; /* Slightly transparent */
+}
+
+table th{
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    border: 1px solid white;
+    font-size: 20px;
+}
+
+table tbody{
+    align-items: center;
+    justify-content: center;
+}
+
+th, td{
+    padding: 8px;
+    text-align: left;
+    border: 1px solid white;
+}
+
+th{
+    width: 290px;
+}
+
+#winner-message{
+    padding: 20px;
+    border: 5px solid var(--purple-color);
+    margin: 10px;
+    font-size: 1.2rem;
+}
